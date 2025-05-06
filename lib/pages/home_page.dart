@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView.builder(
          itemCount: db.toDoList.length,
-         itemBuilder: (context, index) 
+         itemBuilder: (context, index) {
           return Opacity(
             opacity: db.toDoList[index][1] ? 0.5 : 1.0,
             child: TodoTile(
